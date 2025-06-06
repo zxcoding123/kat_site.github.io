@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
+  <title>I'm Sorry, My Love</title>
+  <style>
+    body {
+      margin: 0;
+  font-family: "Edu SA Hand", cursive;
+      background: #ffe6e6;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 10px 0;
+    }
+
+    .heart-button {
+      margin-top: 30px;
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .heart-button:hover {
+      background-color: #ff3366;
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: beat 1s infinite;
+      color: #ff4d6d;
+      margin-top: 20px;
+    }
+
+    @keyframes beat {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>I'm Sorry, My Baby</h1>
+  <p>
+    I know I might've hurt you when I playfully corrected your grammar.<br />
+    I never meant to make you feel bad, even for a second.
+  </p>
+  <p>
+    You're smart, amazing, and I love everything about you — even the way you speak. ❤️<br />
+    I was being playful, but if it made you feel less than perfect, I'm truly sorry.
+  </p>
+  <p>
+    You mean the world to me, Katherine.
+  </p>
+
+  <button class="heart-button" onclick="showLove()">Click to forgive me? 😢</button>
+  <div class="heart" id="heart" style="display:none;">💗 I love you so much 💗</div>
+
+  <script>
+    function showLove() {
+      document.getElementById('heart').style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
